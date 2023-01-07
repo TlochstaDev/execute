@@ -1,0 +1,10 @@
+<script>
+  var url_string = window.location.href; 
+  var url = new URL(url_string);
+  var js = url.searchParams.get("js");
+  document.getElementById("js").innerHTML = "function onLoad() { " + js + " }"
+</script>
+<script id="data">
+</script>
+<body onload="onLoad();">
+</body>
